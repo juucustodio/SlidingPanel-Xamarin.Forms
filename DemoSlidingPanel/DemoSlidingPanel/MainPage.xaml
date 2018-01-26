@@ -5,22 +5,87 @@
              x:Class="DemoSlidingPanel.MainPage">
 
     <AbsoluteLayout VerticalOptions="FillAndExpand" x:Name="Page">
+        
         <StackLayout  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White">
-            <Image Source="Up.png" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" >
+            <Image Source="DownBlue.png" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" >
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Up_Tapped"/>
-                    <PanGestureRecognizer PanUpdated="Up_Tapped" />
+                    <TapGestureRecognizer Tapped="DownBlue_Tapped"/>
+                    <PanGestureRecognizer PanUpdated="DownBlue_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <StackLayout VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Image Source="RightBlue.png" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RightBlue_Tapped"/>
+                        <PanGestureRecognizer PanUpdated="RightBlue_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="LeftBlue.png" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LeftBlue_Tapped"/>
+                        <PanGestureRecognizer PanUpdated="LeftBlue_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <Image Source="UpBlue.png" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="UpBlue_Tapped"/>
+                    <PanGestureRecognizer PanUpdated="UpBlue_Tapped" />
                 </Image.GestureRecognizers>
             </Image>
         </StackLayout>
+        
         <StackLayout x:Name="PageDown" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
                      Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
 
             <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#006df0">
-                <Image Source="Down.png" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" >
+                <Image Source="DownWhite.png" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" >
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Down_Tapped"/>
-                        <PanGestureRecognizer PanUpdated="Down_Tapped" />
+                        <TapGestureRecognizer Tapped="DownWhite_Tapped"/>
+                        <PanGestureRecognizer PanUpdated="DownWhite_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout x:Name="PageRight" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+                     Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
+
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#006df0">
+                <Image Source="RightWhite.png" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RightWhite_Tapped"/>
+                        <PanGestureRecognizer PanUpdated="RightWhite_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout x:Name="PageLeft" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+                     Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
+
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#006df0">
+                <Image Source="LeftWhite.png" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LeftWhite_Tapped"/>
+                        <PanGestureRecognizer PanUpdated="LeftWhite_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout x:Name="PageUp" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+                     Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
+
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#006df0">
+                <Image Source="UpWhite.png" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="UpWhite_Tapped"/>
+                        <PanGestureRecognizer PanUpdated="UpWhite_Tapped" />
                     </Image.GestureRecognizers>
                 </Image>
 

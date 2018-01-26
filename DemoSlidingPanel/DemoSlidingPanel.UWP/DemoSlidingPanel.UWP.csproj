@@ -104,10 +104,14 @@
     <None Include="DemoSlidingPanel.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Down.png" />
-    <Content Include="Assets\Left.png" />
-    <Content Include="Assets\Right.png" />
-    <Content Include="Assets\Up.png" />
+    <Content Include="Assets\DownBlue.png" />
+    <Content Include="Assets\DownWhite.png" />
+    <Content Include="Assets\LeftBlue.png" />
+    <Content Include="Assets\LeftWhite.png" />
+    <Content Include="Assets\RightBlue.png" />
+    <Content Include="Assets\RightWhite.png" />
+    <Content Include="Assets\UpBlue.png" />
+    <Content Include="Assets\UpWhite.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />

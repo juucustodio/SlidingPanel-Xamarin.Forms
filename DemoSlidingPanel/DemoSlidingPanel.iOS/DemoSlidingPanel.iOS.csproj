@@ -129,15 +129,27 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Up.png" />
+    <BundleResource Include="Resources\RightWhite.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Down.png" />
+    <BundleResource Include="Resources\DownBlue.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Left.png" />
+    <BundleResource Include="Resources\DownWhite.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Right.png" />
+    <BundleResource Include="Resources\LeftBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RightBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\UpBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\UpWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LeftWhite.png" />
   </ItemGroup>
 </Project>
