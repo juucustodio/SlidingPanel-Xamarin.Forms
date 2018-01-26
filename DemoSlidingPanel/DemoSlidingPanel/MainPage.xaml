@@ -2,10 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DemoSlidingPanel"
-             x:Class="DemoSlidingPanel.Views.MainPage">
+             x:Class="DemoSlidingPanel.MainPage">
 
-    <Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-    
+    <AbsoluteLayout VerticalOptions="FillAndExpand" x:Name="Page">
+        <StackLayout  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White">
+            <Image Source="Up.png" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Up_Tapped"/>
+                    <PanGestureRecognizer PanUpdated="Up_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+        <StackLayout x:Name="PageDown" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+                     Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
+
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#006df0">
+                <Image Source="Down.png" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Down_Tapped"/>
+                        <PanGestureRecognizer PanUpdated="Down_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+        </StackLayout>
+    </AbsoluteLayout>
+
 </ContentPage>
